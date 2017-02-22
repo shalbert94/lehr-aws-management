@@ -7,7 +7,7 @@ Steps:
 	Path to file can be found by right-clicking the key pair file in Files and clicking "copy"
 	Paste the file path into your terminal and edit it according to the following example
 	Example of a file path: [Pasted] file:///home/folder1/child1folder1/keypairfile.pem
-													[Edited] /home/folder1/child1folder1/keypairfile.pem
+				[Edited] /home/folder/childfolder/keypairfile.pem
 5. Enter the AWS console
 6. Select an instance
 7. Click "Connect"
@@ -21,7 +21,12 @@ Steps:
 		a. Copy the "Example" text shown
 		b. Paste the text into your Terminal
 		c. Replace "keypair.pem" with its file path
-			(
+			(e.g. /home/folder/childfolder/keypairfile.pem)
+10. Press the "Enter" key on your the keyboard
+11. If it's the first time you are connecting:
+	i. Responding to "Are you sure you want to continue connecing (yes/no)" type "yes"
+	ii. Press "Enter"
+	iii. Repeat step #9
 
 
 Notes:
