@@ -1,2 +1,13 @@
 Steps:
-1. 
+1. Connect to instance
+2. In the Terminal application type "sudo nano /etc/shiny-server/shiny-server.conf" and press "Enter"
+3. Type "preserve_logs true;" directly beneath "run_as shiny;"
+  - Enables the Shiny Server to store logs of applicaiton usage
+  - Make no other changes
+4. Press "ctrl + shift + x" simultaneously
+5. Type "Y" in response to "Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?"
+6. Press "Enter"
+7. Run application
+
+Notes:
+a) Use this process to resolve application crashes by tracking an application's function. 
