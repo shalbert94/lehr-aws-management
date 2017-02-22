@@ -9,7 +9,7 @@ Steps:
 	Takes you into the console
 
 
-Note: The console will primarily be used for creating instances, and sometimes for managing security groups.
+Note: The console will primarily be used for launching and connecting to instances, while sometimes for managing security groups.
 
 Definition of an Instance: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html
 Definition of Security Groups: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html
