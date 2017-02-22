@@ -1,0 +1,10 @@
+Steps:
+1. Connect to instance
+2. Access the Shiny Server directly:
+	  i. Create a password (only necessary once):
+      a. Type "sudo passwd shiny" into the Terminal and press "Enter"
+      b. Enter a password and press "Enter"
+     	   Make sure to save it!
+    	c. Retype the password and press "Enter"
+	  ii. Login to Shiny Server:
+			a. Type "su - shiny" and press "Enter"
