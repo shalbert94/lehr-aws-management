@@ -1,6 +1,7 @@
 # lehr-aws-management
 Guides for managing an Amazon Web Services instance.
 
+
 Please note that all work was performed using:
 
 1. A desktop with an Ubuntu operating system
