@@ -1,8 +1,13 @@
 Enter "aws.amazon.com" into browser
 Sign into Thorsten's Amazon Web Services account
-  Click "Sign In to the Console"
+	Click "Sign In to the Console"
 Enter Thorsten's account information
-  I'm using "thorsten.lehr@..."
+	I'm using "thorsten.lehr@..."
 Click "Services"
 Click EC2
-  Takes you into the console
+	Takes you into the console
+
+Note: The console will primarily be used for creating instances, and sometimes for managing security groups.
+
+Definition of an Instance: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html
+Definition of Security Groups: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html
