@@ -23,8 +23,9 @@ Steps:
 	b. Type "sudo systemctl start shiny-server" and press "Enter"
 	c. Type "sudo systemctl status shiny-server" and press "Enter"
 	d. Type "q" to exit status information
-8. Likely, the R application that was added to the Shiny Server cannot be run because packages it requires haven't been installed.
-	 To see a log of the new application which is similar to what you see in RStudio's console when an application crashes, please see that explanation.
+8. Attempt to access your application online by typing "[IPv4 Public IP]:3838/[Application's directory name]/"
+	Likely, the R application that was added to the Shiny Server cannot be run because packages it requires haven't been installed.
+	To see a log of the new application which is similar to what you see in RStudio's console when an application crashes, please see that explanation.
 
 Notes:
 a) Any directory added to /srv/shiny-server which contains a ui.R and server.R file will automatically run after being added and the shiny server was restarted
