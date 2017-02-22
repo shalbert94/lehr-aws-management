@@ -1,0 +1,29 @@
+Steps:
+1. Open the Terminal application
+2. Type "ssh localhost" and press "Enter"
+3. Type your desktop account's password and press "Enter"
+4. Type scp -i [key pair file path] [file to be transferred's file path] [username of the instance who will recieve the file]:[where transferred file should be stored] and press "Enter"
+  a. If you are transferring a directory (i.e. a folder containing files) type "-r" between "scp" and "-i"
+  b. Key pair file path cannot be written with quotation marks, like when you connect to the instance. Write the entire file path.
+  c. The instance's username can be extracted by:
+      i.    Enter AWS console
+      ii.   Select your instance
+      iii.  Click "Connect"
+      iv.   Beneath "Example", copy the section starting with "ubuntu@"
+            (E.g. "ubuntu@ec2-36-157-184-27.eu-central-1.compute.amazonaws.com")
+  d. Do not forget to add ":"
+  e. Type "~/"
+  f. Press "Enter"
+     The file/directory is now stored on the AWS Instance, not the Shiny Server
+5. Connect to the instance
+6. Type "sudo mv ~/[file that was transferred to instance] /srv/shiny-server" and press "Enter"
+		If the file is meant to arrive inside a directory within /srv/shiny-server, add "/[destination directory]
+7. Restart Shiny Server
+	a. Type "sudo systemctl stop shiny-server" and press "Enter"
+	b. Type "sudo systemctl start shiny-server" and press "Enter"
+	c. Type "sudo systemctl status shiny-server" and press "Enter"
+8. Likely, the R application that was added to the Shiny Server cannot be run because packages it requires haven't been installed.
+	 To see a log of the new application which is similar to what you see in RStudio's console when an application crashes, please see that explanation.
+
+Notes:
+a) Any directory added to /srv/shiny-server which contains a ui.R and server.R file will automatically run after being added and the shiny server was restarted
