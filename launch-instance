@@ -1,0 +1,33 @@
+Steps:
+1. Enter console
+2. Click "Launch Instance"
+3. Choose Amazon Machine Image (AMI)
+	"Select" the Ubuntu server whose image states "Free tier eligible"
+4. Choose an Instance Type
+	Select the free tier and click "Review and Launch"
+5. Click "Launch"
+6. Key pair
+	If you have a key pair downloaded on your desktop that you want to use:
+		i.  Select "Choose an existing key pair" from the first dropdown menu
+		ii. Select the key pair you will use from the "Select a key pair" dropdown menu
+	If you don't have a key pair, or cannot locate one:
+		i.   Select "Create a new key pair" from the first dropdown menu
+		ii.  Type a name for the key pair
+		iii. Click "Download Key Pair"
+		iv.  Select "Save File"
+		v.   Click "OK"
+7. Click the "I acknowledge..." box
+8. Click "Launch Instances"
+9. It will take several minutes to "Initialize" your instance
+10. You can now "Connect" to the instance
+
+
+Notes:
+a) Another note describes how to enter the console.
+b) Clicking "Review and Launch" results in your instance having default settings.
+c) Do not worry about whether the free tier will be powerful enough to compute your model, it's easy to upgrade later.
+d) I advise creating a billing alert for every instance immediately after they are created.
+
+Definitions:
+Instance http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html
+Amazon Machine Image(AMI) http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html#amis
