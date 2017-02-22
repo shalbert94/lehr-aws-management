@@ -1,11 +1,13 @@
-Enter "aws.amazon.com" into browser
-Sign into Thorsten's Amazon Web Services account
+Steps:
+1. Enter "aws.amazon.com" into browser
+2. Sign into Thorsten's Amazon Web Services account
 	Click "Sign In to the Console"
-Enter Thorsten's account information
+3. Enter Thorsten's account information
 	I'm using "thorsten.lehr@..."
-Click "Services"
-Click EC2
+4. Click "Services"
+5. Click EC2
 	Takes you into the console
+
 
 Note: The console will primarily be used for creating instances, and sometimes for managing security groups.
 
