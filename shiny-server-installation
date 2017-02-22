@@ -1,0 +1,24 @@
+Steps:
+1. Connect to your instance
+2. Type "sudo apt-get update" into the Terminal desktop application and press "Enter"
+	Downloads and installs updates for the instance's Ubuntu software.
+	If prompted, type "Y" and press "Enter".
+3. Installing R:
+	i.   Type "sudo apt-get install r-base" and press "Enter"
+	ii.  Type "Y" and press "Enter" in response to "Do you want to continue? [Y/n]"
+	iii. Type "sudo apt-get install r-base-dev" and press "Enter"
+4. Install Shiny:
+	i. Type " sudo su - -c "R -e \"install.packages('shiny', repos='http://cran.rstudio.com/')\"" " and press "Enter"
+5. Install Shiny Server:
+	i.	Copy and paste the three statements located at the bottom of this page "https://www.rstudio.com/products/shiny/download-server/" 
+		This ensures you have the most up to date Shiny Server installed
+		(E.g. "sudo apt-get install gdebi-core" and press "Enter"
+					"wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.1.834-amd64.deb" and press "Enter"
+					"sudo gdebi shiny-server-1.5.1.834-amd64.deb" and press "Enter")
+	ii.	When asked "Do you want to install the software package? [y/N]" type "y" and press "Enter"
+6. Check if your Shiny Server is funtioning:
+	i.		Enter the AWS console
+	ii.		Select your instance
+	iii.	In the details listed in the browser's lower area, find "Security groups" under the "Description" tab
+	iv.		Click "launch-wizard-8" located beside "Security groups"
+	
