@@ -27,7 +27,9 @@ Steps:
 	i. Responding to "Are you sure you want to continue connecing (yes/no)" type "yes"
 	ii. Press "Enter"
 	iii. Repeat step #9
+12. You are now connected to your AWS instance through the Terminal
 
 
 Notes:
 a) "chmod400" changes the key pair's access permissions. This step is necessary.
+b) This process must be followed each time you want to access the instance.
