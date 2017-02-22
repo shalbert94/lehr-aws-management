@@ -1,0 +1,28 @@
+Steps:
+1. Open "Files" application on desktop
+2. Locate the key pair associated with the instance you want to connect with
+	Feel free to move the key pair to another folder
+3. Open "Terminal" application on desktop
+4. Type "chmod 400 [path to file]"
+	Path to file can be found by right-clicking the key pair file in Files and clicking "copy"
+	Paste the file path into your terminal and edit it according to the following example
+	Example of a file path: [Pasted] file:///home/folder1/child1folder1/keypairfile.pem
+													[Edited] /home/folder1/child1folder1/keypairfile.pem
+5. Enter the AWS console
+6. Select an instance
+7. Click "Connect"
+8. For "I would like to connect with" select "A standalone SSH client"
+9. Depending on where your key pair file is located...
+	i.  If it's in your "home" folder:
+		a. Copy the "Example" text shown
+			(E.g. ssh -i "keypair.pem" ubuntu@ec2-35-156-184-27.eu-central-1.compute.amazonaws.com)
+		b. Paste the text into your Terminal
+	ii. If it's anywhere else:
+		a. Copy the "Example" text shown
+		b. Paste the text into your Terminal
+		c. Replace "keypair.pem" with its file path
+			(
+
+
+Notes:
+a) "chmod400" changes the key pair's access permissions. This step is necessary.
