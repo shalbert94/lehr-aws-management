@@ -18,8 +18,12 @@ Steps:
 		v.   Click "OK"
 7. Click the "I acknowledge..." box
 8. Click "Launch Instances"
-9. It will take several minutes to "Initialize" your instance
-10. You can now "Connect" to the instance
+	It will take several minutes to "Initialize" your instance
+9. Enter the AWS console
+10. Click "Instances" in sidebar
+11. Select your newly created instance
+12. Name the instance
+13. You can now "Connect" to the instance
 
 
 Notes:
