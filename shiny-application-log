@@ -2,20 +2,24 @@ Steps:
 1. Connect to instance
 2. In the Terminal application type "sudo nano /etc/shiny-server/shiny-server.conf" and press "Enter"
 3. Type "preserve_logs true;" directly beneath "run_as shiny;"
-  - Enables the Shiny Server to store logs of applicaiton usage
-  - Make no other changes
+	- Enables the Shiny Server to store logs of applicaiton usage
+	- Make no other changes
 4. Press "ctrl + shift + x" simultaneously
 5. Type "Y" in response to "Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?"
 6. Press "Enter"
-7. Attempt to access your application online by typing "[IPv4 Public IP]:3838/[Application's directory name]/"
-8. Access the Shiny Server directly:
-  i. Create a password:
-    a. Type "sudo passwd shiny" into the Terminal and press "Enter"
-    b. Enter a password and press "Enter"
-        Make sure to save it!
-    c. Retype the password and press "Enter"
-  ii. Login to Shiny Server:
-		a. Type "su - shiny" and press "Enter"
+7. Restart Shiny Server:
+	a. Type "sudo systemctl stop shiny-server" and press "Enter"
+	b. Type "sudo systemctl start shiny-server" and press "Enter"
+8. Attempt to access your application online by typing "[IPv4 Public IP]:3838/[Application's directory name]/"
+9. Type "ls /var/log/shiny-server"
+	- One of the results is a .log file that documents why your application crashed
+	- Copy the relevant file's name (they are named and time stamped)
+10. Type "sudo cat /var/log/shiny-server/[paste .log file name]"
+	- An RStudio console-like result will be shown.
+11. Repeat steps 8 through 10 (inclusive) until problem is resolved.
+	- See adding-r-packages tutorial for adding R packages to your Shiny Server Environment
+12. Type "sudo nano /etc/shiny-server/shiny-server.conf" and press "Enter"
+13. Delete "preserve_logs true;"
 
 Notes:
 a) Use this process to resolve application crashes by tracking an application's function. 
