@@ -7,8 +7,15 @@ Steps:
 4. Press "ctrl + shift + x" simultaneously
 5. Type "Y" in response to "Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?"
 6. Press "Enter"
-7. Run application in web browser
-8. R
+7. Attempt to access your application online by typing "[IPv4 Public IP]:3838/[Application's directory name]/"
+8. Access the Shiny Server directly:
+  i. Create a password:
+    a. Type "sudo passwd shiny" into the Terminal and press "Enter"
+    b. Enter a password and press "Enter"
+        Make sure to save it!
+    c. Retype the password and press "Enter"
+  ii. Login to Shiny Server:
+		a. Type "su - shiny" and press "Enter"
 
 Notes:
 a) Use this process to resolve application crashes by tracking an application's function. 
