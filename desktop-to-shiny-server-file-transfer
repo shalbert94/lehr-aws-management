@@ -22,6 +22,7 @@ Steps:
 	a. Type "sudo systemctl stop shiny-server" and press "Enter"
 	b. Type "sudo systemctl start shiny-server" and press "Enter"
 	c. Type "sudo systemctl status shiny-server" and press "Enter"
+	d. Type "q" to exit status information
 8. Likely, the R application that was added to the Shiny Server cannot be run because packages it requires haven't been installed.
 	 To see a log of the new application which is similar to what you see in RStudio's console when an application crashes, please see that explanation.
 
