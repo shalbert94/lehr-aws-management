@@ -15,3 +15,13 @@ Processes documented:
 2. launch-instance = Creating a new instance. 
 
 3. connect-to-instance = Enables you to manage an instance using the Terminal desktop applicaiton
+
+4. opensource-shiny-server-installation = Setup Shiny Server on AWS instance
+
+5. desktop-to-shiny-server-file-transfer = Transfer an application's directory (entire folder) from a desktop to the Shiny Server
+
+6. shiny-application-log = Enables Shiny Server to save crash logs for applications. 
+    Enables you to learn why an application crashed.
+    
+7. install-r-packages = Install R packages on Shiny Server.
+    Enables you to control the R environment through the Terminal desktop application.
