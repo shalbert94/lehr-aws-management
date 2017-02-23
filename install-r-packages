@@ -1,10 +1,19 @@
 Steps:
 1. Connect to instance
 2. Access the Shiny Server directly:
-	  i. Create a password (only necessary once):
-      a. Type "sudo passwd shiny" into the Terminal and press "Enter"
-      b. Enter a password and press "Enter"
-     	   Make sure to save it!
-    	c. Retype the password and press "Enter"
-	  ii. Login to Shiny Server:
-			a. Type "su - shiny" and press "Enter"
+	i. Create a password (only necessary once):
+		a. Type "sudo passwd shiny" into the Terminal and press "Enter"
+		b. Enter a password and press "Enter"
+			Make sure to save it!
+		c. Retype the password and press "Enter"
+	ii. Login to Shiny Server:
+		a. Type "su - shiny" and press "Enter"
+		b. Type the Shiny password created in step #2i
+		c. Type "R"
+			Opens the R console
+		d. Install packages by typing as you do in the RStudio console
+			(I.e. install.packages("[package name]")
+
+
+Note: If you are resolving a crashing app, I suggest opening two Terminal windows. One should disply the R console (reached in this 
+tutorial) and the other should show the application log (shown in "shiny-application-log" tutorial).
