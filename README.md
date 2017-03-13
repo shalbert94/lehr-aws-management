@@ -18,7 +18,7 @@ Steps for putting your Shiny application on an AWS server:
 
 4. opensource-shiny-server-installation = Setup Shiny Server on AWS instance
 
-Load balanced directory upload (where to fit crontab + chmod?)
+Load balanced directory upload (fit crontab + chmod into desktop-shiny-server-file-transfer)
 
 5. desktop-to-shiny-server-file-transfer = Transfer an application's directory (entire folder) from a desktop to the Shiny Server
 
