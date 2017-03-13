@@ -1,0 +1,13 @@
+Determine the maximum number of individuals you expect to be reviewing your application at a single moment (10 should be plenty)
+Create the same number of copies of your shiny application 
+Rename the copies "app_#", where # represents a number starting from 1. Make sure not to skip numbers and to give each copy a different number.
+  E.g. app_1, app_2, app_3, app_4, etc.
+Create directory that has the name of the shiny application you created copies of, 
+Place every copy in that directory
+Download the files index.html and shiny.sh from this github repository
+Place both of those files into the directory containing copies of your application
+Open shiny.sh in a text editor application and on the second line (it says "dir_apps='/srv/shiny-server/myApp/'") replace "myApp" with the name of your directory containing the application's copies.
+Save the shiny.sh file's changes
+
+Note:
+a. The reason you create copies of your application and place shiny.sh and index.html into a directory is to enable a load blancer to function. The load balancer enables your application to be used by more than one person at a time.
