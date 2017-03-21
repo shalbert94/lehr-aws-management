@@ -1,13 +1,40 @@
-Determine the maximum number of individuals you expect to be reviewing your application at a single moment (10 should be plenty)
-Create the same number of copies of your shiny application 
-Rename the copies "app_#", where # represents a number starting from 1. Make sure not to skip numbers and to give each copy a different number.
-  E.g. app_1, app_2, app_3, app_4, etc.
-Create directory that has the name of the shiny application you created copies of, 
-Place every copy in that directory
-Download the files index.html and shiny.sh from this github repository
-Place both of those files into the directory containing copies of your application
-Open shiny.sh in a text editor application and on the second line (it says "dir_apps='/srv/shiny-server/myApp/'") replace "myApp" with the name of your directory containing the application's copies.
-Save the shiny.sh file's changes
+1. Add the shiny application you will put onto the server to your desktop
+2. Open your desktop's "Files" application and place the shiny application in your "Home" folder
+3. Determine the maximum number of individuals you expect to be reviewing your application at a single moment (10 should be plenty)
+4. Create that many copies of your shiny application's entire folder
+		a. E.g. 10 copies
+5. Rename the copies "app_#", where # represents a number starting from 1
+		a. Do not to skip numbers
+		b. Give each copy a different number
+  	c. E.g. app_1, app_2, app_3...app_10
+6. Create a new folder and name it after your shiny application- we'll call this the "main folder"
+		a. If the shiny application is named "IbuprofenSimulator", name this folder "IbuprofenSimulator"
+7. Place every copy of your shiny application into the main folder
+8. Open the "RStudio" application on your desktop
+9. In the menu at the top of your RStudio window, click:
+		a. "File"
+		b. "New File"
+		c. "R HTML"
+10. Delete all text in the R HTML document
+11. In this GitHub repository, locate the file named "index.html"
+12. Copy all of its text
+13. Paste the text in your R HTML document
+14. Save the R HTML document
+		a. Name it "index.html"
+		b. Place it inside your main folder
+15. In the menu at the top of your RStudio window, click:
+		a. "File"
+		b. "New File"
+		c. "R Script"
+16. In this GitHub repository, locate the file named "shiny.sh"
+17. Copy all of its text
+18. Paste the text in your R Script document
+19. On the second line of what was pasted it says "dir_apps='/srv/shiny-server/myApp/'":
+		a. Replace "myApp" with the name of your main folder
+20. Save the R Script document
+		a. Name it "shiny.sh"
+		b. Place it inside your main folder
+
 
 Note:
-a. The reason you create copies of your application and place shiny.sh and index.html into a directory is to enable a load blancer to function. The load balancer enables your application to be used by more than one person at a time.
+a. This guide sets up your load balancer. A load balancer enables more than one person to use the application simultaneously. 
