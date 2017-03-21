@@ -14,10 +14,11 @@ Steps for putting your Shiny application on an AWS server:
 
 2. launch-instance = Creating a new instance. 
 
-3. connect-to-instance = Enables you to manage an instance using the Terminal desktop applicaiton
+3. connect-to-instance = Enables you to manage an instance using the "Terminal" desktop applicaiton
 
-4. opensource-shiny-server-installation = Setup Shiny Server on AWS instance
+4. opensource-shiny-server-installation = Setup Shiny Server on the AWS instance
 
+5. organize-shiny-application-directory = Prepare your shiny application to be uploaded to the shiny server 
 Load balanced directory upload (fit crontab + chmod into desktop-shiny-server-file-transfer)
 
 5. desktop-to-shiny-server-file-transfer = Transfer an application's directory (entire folder) from a desktop to the Shiny Server
