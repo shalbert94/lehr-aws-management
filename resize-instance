@@ -16,6 +16,6 @@
 14. Click "Start"
 15. Wait for the "Instance State" to say "running" before doing anything with the instance
 
-Note: 
-Please be aware! 
-Resizing an instance results in it having a new "IPv4 Public IP". This is important for when you attempt to access a shiny application.
+Note: Please be aware! 
+a) Please reduce the size of your instance once it becomes used less frequently. This saves our researchgroup money.
+b) Resizing an instance results in it having a new "IPv4 Public IP". This is important for when you attempt to access a shiny application.
