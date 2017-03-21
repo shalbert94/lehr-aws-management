@@ -1,0 +1,21 @@
+1. Open the AWS console
+2. Select your instance
+3. Click "Actions"
+4. Hover over "Instance State"
+5. Click "Stop"
+6. Wait until the "Instance State" says "stopped"
+7. Click "Actions"
+8. Hover over "Instance Settings"
+9. Click "Change Instance Type"
+10. Select a "t2" instance
+	a. If your instance CPU utilization was too high, select an "Instance Type" that is larger
+	b. If your instance CPU utilization was low, select an "Instance Type" that is smaller
+11. Click "Apply"
+12. Click "Actions"
+13. Hover over "Instance State"
+14. Click "Start"
+15. Wait for the "Instance State" to say "running" before doing anything with the instance
+
+Note: 
+Please be aware! 
+Resizing an instance results in it having a new "IPv4 Public IP". This is important for when you attempt to access a shiny application.
