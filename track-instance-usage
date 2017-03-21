@@ -11,7 +11,7 @@
 9. Type a name for the alarm in the "Name" box
 	a. Name the first alarm "Excessive CPU Usage Alarm"
 10. Type a description for the alarm in the "Description" box
-	a. Type "If reached, upgrade this instance." for the first alarm
+	a. Type "If reached, resize this instance." for the first alarm
 11. Right of "is:" select ">=" and right of that, type "90" in the box 
 12. Right of "for:" type "3"
 13. Right of "Send notification to:":
@@ -23,5 +23,5 @@
 15. Open your email inbox and click the confirmation link sent from Amazon Web Services
 
 Notes: 
-a) If you need to upgrade the instance, do it quickly. If the CPU usage is too high the instance will shutdown.
-b) To upgrade the AWS instance see "upgrade-instance"
+a) If you need to resize the instance, do it quickly. If the CPU usage is too high the instance will shutdown.
+b) To resize the AWS instance see "resize-instance"
