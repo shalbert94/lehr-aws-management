@@ -1,0 +1,27 @@
+1. Open the AWS console
+2. At the top of your console webpage, click "Services"
+3. In the search bar type "CloudWatch" and click the coresponding result
+4. In the menu located on the left-side of the webpage, click "Alarms"
+5. Click "Create Alarm"
+6. Click "EC2 Metrics"
+7. Select the line with:
+	a. "CPUUtilization" in the "Metric Name" column
+	b. Your instance's name in the "InstanceName" column
+8. Click "Next" at the bottom of that window
+9. Type a name for the alarm in the "Name" box
+	a. Name the first alarm "Excessive CPU Usage Alarm"
+10. Type a description for the alarm in the "Description" box
+	a. Type "If reached, upgrade this instance." for the first alarm
+11. Right of "is:" select ">=" and right of that, type "90" in the box 
+12. Right of "for:" type "3"
+13. Right of "Send notification to:":
+	a. If this is the first alarm created under your AWS account, click "New list"
+		i.  Right of "Send notification to:" type "ExcessCPUUsage"
+		ii. Right of "Email list:" type the email address of everyone who should be informed of the alarm, including Thorsten's, seperated by ","
+	b. If this is not the first alarm created, but it is your instances first alarm, select "ExcessCPUUsage"
+14. Click "Create Alarm"
+15. Open your email inbox and click the confirmation link sent from Amazon Web Services
+
+Notes: 
+a) If you need to upgrade the instance, do it quickly. If the CPU usage is too high the instance will shutdown.
+b) To upgrade the AWS instance see "upgrade-instance"
