@@ -17,15 +17,21 @@ Steps:
      The file/directory is now stored on the AWS Instance, not the Shiny Server
 5. Connect to the instance
 6. Type "sudo mv ~/[file that was transferred to instance] /srv/shiny-server" and press "Enter"
-		If the file is meant to arrive inside a directory within /srv/shiny-server, add "/[destination directory]
-7. Restart Shiny Server
+7. Type "sudo chmod 777 /srv/shiny-server/[name of your shiny application's main folder]/shiny.sh"
+8. Type "sudo nano /etc/crontab"
+9. Type "*  *   * * *   root   /srv/shiny-server/[name of your shiny application's main folder]/shiny.sh" above the "#" symbol located at the bottom
+10. Press "Ctrl" + "Shift" + "X" simultanously
+11. Type "Y"
+12. Press "Enter"
+13. Restart Shiny Server
 	a. Type "sudo systemctl stop shiny-server" and press "Enter"
 	b. Type "sudo systemctl start shiny-server" and press "Enter"
 	c. Type "sudo systemctl status shiny-server" and press "Enter"
 	d. Type "q" to exit status information
-8. Attempt to access your application online by typing "[IPv4 Public IP]:3838/[Application's directory name]/"
+14. Attempt to access your application online by typing "[IPv4 Public IP]:3838/[Application's directory name]/"
 	Likely, the R application that was added to the Shiny Server cannot be run because packages it requires haven't been installed.
 	To see a log of the new application which is similar to what you see in RStudio's console when an application crashes, please see that explanation.
 
 Notes:
 a) Any directory added to /srv/shiny-server which contains a ui.R and server.R file will automatically run after being added and the shiny server was restarted
+b) IPv4 Public IP can be found in your EC2 console
